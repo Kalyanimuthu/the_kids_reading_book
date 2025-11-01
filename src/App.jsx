@@ -23,14 +23,15 @@ function App() {
     <div className={`min-h-screen text-white font-inter ${pageBg}`}>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Navigate to="/home" replace />} />
-        <Route path="/home" element={<HomePage />} />
+        
+        <Route path="/" element={<HomePage />} />
         <Route path="/schools" element={<SchoolsPage />} />
         <Route path="/library" element={<LibraryPage />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />
     </div>
