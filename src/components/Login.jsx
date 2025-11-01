@@ -1,4 +1,4 @@
-
+import { Link} from 'react-router-dom';
 import React, { useState } from 'react';
 
 function LoginPage() {
@@ -52,7 +52,7 @@ function LoginPage() {
 
           <p className="mt-4 text-center text-lg text-black">Need help logging in? <a href="#" className="font-bold">Click here</a></p>
           
-          <p className="mt-4 text-center text-lg text-black">New to KidsReading? <a href="/signup" className="underline font-bold">SIGN UP</a></p>
+          <p className="mt-4 text-center text-lg text-black">New to KidsReading? <Link to="/signup" className="underline font-bold">SIGN UP</Link></p>
         
       </div>
     </section>

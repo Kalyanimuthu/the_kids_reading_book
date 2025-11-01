@@ -1,4 +1,5 @@
-// pages/SignupPage.jsx
+// /SignupPage.jsx
+import { Link} from 'react-router-dom';
 import React, { useState } from 'react';
 
 function SignupPage() {
@@ -69,7 +70,7 @@ function SignupPage() {
           By continuing, you agree to our <a href="#" className="underline font-bold">Terms of service</a> and <a href="#" className="underline font-bold">Privacy policy</a>.
         </p>
         <p className="mt-4 text-center text-lg text-black">
-          Already have a KidsReading account? <a href="/login" className="font-bold">Log In Here</a>
+          Already have a KidsReading account? <Link to="/login" className="font-bold">Log In Here</Link>
         </p>
       </div>
     </section>
