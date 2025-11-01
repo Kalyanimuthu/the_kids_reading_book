@@ -1,5 +1,5 @@
 // App.jsx
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import SchoolsPage from './pages/SchoolsPage';
@@ -14,19 +14,16 @@ function App() {
   const location = useLocation();
   const path = location.pathname;
 
-  let pageBg = 'bg-[#03194F]'; // default
 
-  if (path === '/library') pageBg = 'bg-[white]';
-  else if (path === '/schools') pageBg = 'bg-[#03194F]';
-  else if (path === '/pricing') pageBg = 'bg-[white]';
-  else if (path === '/about') pageBg = 'bg-[white]';
-  else if (path === '/login') pageBg = 'bg-[white]';
-  else if (path === '/signup') pageBg = 'bg-[white]';
+  const whiteBgRoutes = ['/library', '/pricing', '/about', '/login', '/signup'];
+  const pageBg = whiteBgRoutes.includes(path) ? 'bg-white' : 'bg-[#03194F]';
+
 
   return (
     <div className={`min-h-screen text-white font-inter ${pageBg}`}>
       <Navbar />
       <Routes>
+        <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/schools" element={<SchoolsPage />} />
         <Route path="/library" element={<LibraryPage />} />

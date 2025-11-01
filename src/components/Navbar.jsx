@@ -16,7 +16,7 @@ function Navbar() {
         {/* Right Side: Nav Links + Button */}
         <div className="flex items-center gap-12 ml-auto">
           <ul className="flex gap-8 text-xl font-bold">
-            <li><NavLink to="/" className={({ isActive }) => isActive ? 'text-[#78ABF1] font-bold' : 'hover:text-[#A9DFED]'}>HOME</NavLink></li>
+            <li><NavLink to="/home" className={({ isActive }) => isActive ? 'text-[#78ABF1] font-bold' : 'hover:text-[#A9DFED]'}>HOME</NavLink></li>
             <li><NavLink to="/schools" className={({ isActive }) => isActive ? 'text-[#78ABF1] font-bold' : 'hover:text-[#A9DFED]'}>SCHOOLS</NavLink></li>
             <li><NavLink to="/library" className={({ isActive }) => isActive ? 'text-[#78ABF1] font-bold' : 'hover:text-[#A9DFED]'}>LIBRARY</NavLink></li>
             <li><NavLink to="/pricing" className={({ isActive }) => isActive ? 'text-[#78ABF1] font-bold' : 'hover:text-[#A9DFED]'}>PRICING</NavLink></li>

@@ -1,4 +1,4 @@
-// /SignupPage.jsx
+// /components/Signup.jsx
 import { Link} from 'react-router-dom';
 import React, { useState } from 'react';
 
