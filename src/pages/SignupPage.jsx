@@ -2,7 +2,7 @@ import FreeTrialBanner from '../components/FreeTrialBanner';
 import Signup from '../components/Signup';
 
 
-function HomePage() {
+function SignupPage() {
   return (
     <>
     <div className="min-h-screen font-inter">
@@ -13,4 +13,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default SignupPage;
